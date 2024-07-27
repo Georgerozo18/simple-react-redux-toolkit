@@ -1,0 +1,32 @@
+.colorChangerContainer {
+    /* background-color: orange; */
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 1em;
+    width: fit-content;
+    height: 2em;
+    align-items: center;
+}
+
+.colorChangerContainer>select {
+    width: 10em;
+    height: 2.5em;
+    border-radius: 1em;
+    padding-left: 1em;
+}
+
+.colorChangerContainer>input[type="color"] {
+    opacity: 0;
+    padding: 2em;
+    position: absolute;
+    pointer-events: none;
+}
+
+.color-display {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}

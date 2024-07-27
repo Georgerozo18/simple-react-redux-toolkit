@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-
+import '../styles/pages/Navbar.css'
 const navItems = [
     { title: 'Page One', navigateTo: '/' },
     { title: 'Page Two', navigateTo: '/page_two' },
@@ -9,7 +9,7 @@ const navItems = [
 export const Navbar = () => {
     return (
         <nav className='navbar'>
-            <ul>
+            <ul className='navbar_list'>
                 {navItems.map((item, index) => (
                     <li key={index}>
                         <NavLink to={item.navigateTo} replace>
